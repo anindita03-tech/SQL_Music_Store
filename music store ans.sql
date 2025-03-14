@@ -1,4 +1,4 @@
-select * from employee;
+/*	Question Set 1 - Easy */
 
 -- 1. Who is the senior most employee based on job title?
 SELECT * FROM employee
@@ -24,12 +24,15 @@ GROUP BY billing_city ORDER BY total_invoice DESC;
 
 -- 5. Who is the best customer? The customer who has spent the most money will be
 -- declared the best customer. Write a query that returns the person who has spent the most money
+
 SELECT customer.first_name,customer.last_name, customer.customer_id,SUM(invoice.total)AS total FROM customer
 inner join invoice on customer.customer_id = invoice.customer_id
 GROUP BY customer.customer_id
 ORDER BY total DESC
 LIMIT 1;
+
 -- Question Set 2 – Moderate
+
 -- 1. Write query to return the email, first name, last name, & Genre of all Rock Music
 -- listeners. Return your list ordered alphabetically by email starting with A
 SELECT DISTINCT email,first_name,last_name
