@@ -10,5 +10,5 @@ This project is for beginners and will teach you how to analyze the music playli
 * PgAdmin4
 
 Schema- Music Store Database  
-This is a SQL end to end project
+This is a SQL end to end project .
 
